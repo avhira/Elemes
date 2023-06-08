@@ -1,0 +1,93 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero__main {
+  padding-left: 30px;
+  padding-right: 255px;
+}
+.hero--text {
+  line-height: 29px;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.hero__img_main {
+  width: 412px;
+  height: 414px;
+}
+.hero__bg_hero {
+  width: 1200px;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+.hero__bg_img {
+  position: relative;
+  padding: 30px;
+  right: 90px;
+}
+
+.hero__promo {
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 8px 10px gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 24px;
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+}
+.hero__promo_img {
+  width: 53px;
+  height: 53px;
+}
+.hero__promo_cat {
+  margin: 10px 0;
+}
+
+.hero--aliceblue {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 100vw;
+    flex-direction: column-reverse;
+  }
+  .hero__bg_hero {
+    display: none;
+  }
+  .hero__bg_img {
+    padding: 10px;
+    left: 5%;
+    right: 0px;
+  }
+  .hero__main {
+    margin-top: 40px;
+    padding: 30px;
+  }
+  .hero__img_main {
+    width: 50%;
+    height: 70%;
+    margin-top: 10%;
+  }
+  .hero__promo {
+    top: 48%;
+    right: 30px;
+    bottom: 40%;
+  }
+  .hero__promo_title {
+    font-size: 12px;
+  }
+  .hero__promo_cat {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+}

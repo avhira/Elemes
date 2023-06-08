@@ -1,0 +1,38 @@
+.tren__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.tren--img {
+  z-index: 1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.tren__title {
+  font-size: 26px;
+}
+.tren__button {
+  text-align: center;
+  margin: 70px 0 100px;
+}
+
+.tren__star {
+  fill: #ff8412;
+  color: #ff8412;
+}
+.tren--star-empty {
+  fill: #c9c9c9;
+  color: #c9c9c9;
+}
+
+@media (max-width: 768px) {
+  .tren__items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  .tren__button {
+    display: none;
+  }
+}

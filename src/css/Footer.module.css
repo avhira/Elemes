@@ -1,0 +1,60 @@
+.footer {
+  background-color: #f9fff6;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 80px 40px;
+}
+
+.footer__law {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__input {
+  padding: 10px 18px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 2px solid #8bac3e;
+}
+
+.footer_input_email {
+  display: flex;
+}
+.footer__social {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer__hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+  .footer__hamburger {
+    display: flex;
+    position: relative;
+    bottom: 70px;
+    margin-left: 3%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .footer--hamburger-text {
+    font-size: 14px;
+    color: #757575;
+  }
+}

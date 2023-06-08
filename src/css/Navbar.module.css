@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar__item {
+  display: flex;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.navbar__aktif {
+  position: relative;
+}
+
+.navbar__login {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-bottom: 50px;
+  }
+  .navbar__item {
+    display: none;
+  }
+  .navbar__logo {
+    width: 150px;
+    height: 36px;
+  }
+  .navbar__login {
+    position: absolute;
+    right: 8%;
+  }
+  .navbar--nonaktif {
+    display: none;
+  }
+}
