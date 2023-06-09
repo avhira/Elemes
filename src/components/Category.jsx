@@ -42,18 +42,19 @@ const Category = () => {
           <br />
           <span className="hero--success">Receipt</span>
         </h2>
-
-        <div className={style.cat__items}>
-          {visibleCards.map((card, index) => (
-            <div key={index} className={`cat__card ${style[card.color]}`}>
-              {index === 1 && <img src={bg_item} alt="bg" className={style['cat--bg']} />}
-              <div>
-                <img src={card.imgSrc} alt={card.name} className={style.cat__img} />
+        <div className={style.cat__wrap}>
+          <div className={style.cat__items}>
+            {visibleCards.map((card, index) => (
+              <div key={index} className={`cat__card ${style[card.color]}`}>
+                {index === 1 && <img src={bg_item} alt="bg" className={style['cat--bg']} />}
+                <div>
+                  <img src={card.imgSrc} alt={card.name} className={style.cat__img} />
+                </div>
+                <p className={style.cat__name}>{card.name}</p>
+                <p className={style.cat__desc}>{card.desc}</p>
               </div>
-              <p className={style.cat__name}>{card.name}</p>
-              <p className={style.cat__desc}>{card.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className={style.cat__button}>
