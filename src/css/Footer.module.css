@@ -45,9 +45,8 @@
     display: none;
   }
   .footer__hamburger {
+    padding: 50px 20px;
     display: flex;
-    position: relative;
-    bottom: 70px;
     margin-left: 3%;
     font-weight: bold;
     text-align: center;
@@ -56,5 +55,8 @@
   .footer--hamburger-text {
     font-size: 14px;
     color: #757575;
+  }
+  .footer__law {
+    display: none;
   }
 }

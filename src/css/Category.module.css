@@ -64,7 +64,8 @@
     padding-left: 20px;
   }
   .cat__items {
-    padding-left: 6%;
+    overflow-x: auto;
+    margin: 0 auto;
   }
   .cat__button {
     display: none;

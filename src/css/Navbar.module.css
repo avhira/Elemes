@@ -4,6 +4,10 @@
   justify-content: space-between;
   padding: 20px;
 }
+.navbar__logo {
+  width: 207px;
+  height: 50px;
+}
 
 .navbar__item {
   display: flex;
