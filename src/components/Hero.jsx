@@ -11,7 +11,7 @@ const Hero = () => {
         <div className={style.hero__main}>
           <h1 className="hero__header hero--success hero--nonaktif">Good Food Us Good Mood</h1>
           <p className={style['hero--text']}>I would think that conserving our natural resources should be a conservative position: Not to waste food, and not to throw away a lot of the food that we buy.</p>
-          <div>
+          <div className={style.hero__buttons}>
             <button className="button button--success ">
               <a href="#" className="button--white">
                 Daftar Sekarang

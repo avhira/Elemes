@@ -13,6 +13,10 @@
   color: #757575;
   margin-bottom: 32px;
 }
+.hero__buttons {
+  display: flex;
+  gap: 10px;
+}
 
 .hero__img_main {
   width: 412px;
